@@ -10,7 +10,7 @@ export const Reel = () => {
   <Sequence name="Otwarcie i kartki" from={5*fps} durationInFrames={9*fps} premountFor={fps}><Inside/></Sequence>
   <Sequence name="Już wkrótce" from={14*fps} durationInFrames={4*fps} premountFor={fps}><Finale/></Sequence>
   <AbsoluteFill style={{background:palette.pink,opacity:interpolate(f,[4.7*fps,5*fps,5.25*fps],[0,1,0],ease),pointerEvents:'none'}}/>
-  <AbsoluteFill style={{background:palette.dark,opacity:interpolate(f,[13.7*fps,14*fps,14.25*fps],[0,1,0],ease),pointerEvents:'none'}}/>
+  <AbsoluteFill style={{background:palette.dark,opacity:interpolate(f,[13.88*fps,14*fps,14.25*fps],[0,1,0],ease),pointerEvents:'none'}}/>
   <AbsoluteFill style={{background:palette.lime,opacity:interpolate(f,[17.75*fps,18*fps],[0,1],ease),pointerEvents:'none'}}/>
  </AbsoluteFill>;
 };

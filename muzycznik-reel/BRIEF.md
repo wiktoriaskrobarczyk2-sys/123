@@ -21,3 +21,6 @@ Film bez ścieżki dźwiękowej. Eksport MP4 i GIF.
 Logo wektorowe bez tła i kształty instrumentów wyodrębniono z brandbooka. Białe logo na ciemnozielonym tyle książeczki. Okładka i strony 02–06 z pełnego Muzycznika. Dalsze kartki przyspieszają i pozostają neutralne, bez ujawniania kolejnych stron.
 Pierwszy napis: „Już niedługo dostępny dla naszych uczniów”; dopisek „Wersja drukowana w naszych placówkach”.
 Użytkownik zaakceptował podobną czcionkę zamiast nieposiadanych fontów Transforma Sans/Mix.
+
+## Wersja 3
+Płynny przebieg od zamkniętej okładki przez strony 02–06 do szybkiego przewijania i ponownego zamknięcia. Bez nieruchomej czytelnej strony podczas przyspieszania.
