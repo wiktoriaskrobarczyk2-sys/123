@@ -48,7 +48,7 @@ export const Inside = () => {
   <AbsoluteFill style={{background:palette.pink}}/>
   <BrandShapes/>
   <div style={{position:'absolute',left:80,top:125}}><Logo/></div>
-  <div style={{position:'absolute',left:80,right:80,top:330}}><Rise><Label>Zajrzyj do środka</Label><div style={{fontSize:90,fontWeight:800,lineHeight:1.06,letterSpacing:-5}}>Odkrywaj.<br/>Graj. Rozwijaj się.</div></Rise></div>
+  <div style={{position:'absolute',left:80,right:80,top:330}}><Rise><Label>Zajrzyj do środka</Label><div style={{fontSize:90,fontWeight:800,lineHeight:1.06,letterSpacing:-2}}>Odkrywaj.<br/><span style={{fontFamily:'"Transforma Mix"'}}>Graj.</span> Rozwijaj się.</div></Rise></div>
   <div style={{position:'absolute',left:50,top:935,width:980,height:345,perspective:2200,transform:`translateX(${pan}px) scale(${scale})`,transformOrigin:'center',transformStyle:'preserve-3d'}}>
    {showLeftStack && <div style={{position:'absolute',left:0,top:0,width:490,height:361,background:'repeating-linear-gradient(0deg,#dedbd2 0px,#dedbd2 1px,#fff 1px,#fff 3px)',transformOrigin:'right center',transform:`translateZ(-4px) rotateY(${leftAngle}deg)`,boxShadow:'0 30px 40px #14313425'}}/>}
    <div style={{position:'absolute',left:490,top:0,width:490,height:361,background:'repeating-linear-gradient(0deg,#dedbd2 0px,#dedbd2 1px,#fff 1px,#fff 3px)',transformOrigin:'left center',transform:`translateZ(-4px) rotateY(${rightAngle}deg)`,boxShadow:'0 30px 40px #14313425'}}/>

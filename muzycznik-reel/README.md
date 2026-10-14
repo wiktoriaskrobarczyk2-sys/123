@@ -8,7 +8,7 @@ Obrót zamkniętej książeczki → otwarcie od okładki → czytelny podgląd s
 
 Szybkie przewijanie wykorzystuje tekstury stron 07–30 z oryginalnego PDF-u. W około sekundę przewija się 18 kartek, z malejącymi odstępami. Rozwarcie ograniczono do 64° zamiast pełnego obrotu 180°. Rozmycie wyłącznie na powierzchniach stron sprawia, że widoczne są kolory i zadruk, ale nie czytelny tekst. Tylna okładka ma białe logo Artyz; logotypy w kadrach nie mają tła. Kształty i paleta pochodzą z brandbooka.
 
-Dodatkowe napisy: Montserrat, zamiennik nieposiadanych fontów Transforma zaakceptowany przez użytkownika. Licencja w public/Montserrat-OFL.txt.
+Dodatkowe napisy: oryginalna Transforma Sans jako podstawowy krój i Transforma Mix w krótkich akcentach. Pliki variable WOFF2 dostarczone przez użytkownika znajdują się w public/fonts/. Eksport czeka na załadowanie obu rodzin i przerywa się, jeśli fonty nie są dostępne.
 
 ## Praca nad filmem
 
@@ -22,7 +22,9 @@ Kompozycja główna: MuzycznikReel. Ujęcia Opening, Inside i Finale mają osobn
 ## Eksport
 
 ```sh
-npx remotion render src/index.ts MuzycznikReel out/Muzycznik-Artyziaka-v4.mp4 --browser-executable=/usr/bin/chromium --codec=h264 --crf=18 --concurrency=3
+npx remotion render src/index.ts MuzycznikReel out/Muzycznik-Artyziaka-v5.mp4 --browser-executable=/usr/bin/chromium --codec=h264 --crf=18 --concurrency=3
 ```
 
 Walidacja: npm run lint, przegląd 16 kadrów szybkiego przewijania i zamknięcia, pełny render 540 klatek oraz kontrola parametrów eksportu ffprobe.
+
+Typografia: sprawdzono polskie znaki w dostarczonych fontach oraz kadry otwarcia, środka i finału z obydwoma załadowanymi krojami. Dekorację w finale odsunięto od napisu, aby utrzymać kontrast.
