@@ -24,3 +24,6 @@ Użytkownik zaakceptował podobną czcionkę zamiast nieposiadanych fontów Tran
 
 ## Wersja 3
 Płynny przebieg od zamkniętej okładki przez strony 02–06 do szybkiego przewijania i ponownego zamknięcia. Bez nieruchomej czytelnej strony podczas przyspieszania.
+
+## Wersja 4
+Szybkie kartki mają autentyczny zadruk z PDF-u, zamiast pustych powierzchni. Przewijanie 18 kartek w około sekundę, w częściowo przymkniętej książce. Treść jest nierozpoznawalna dzięki prędkości i rozmyciu samych powierzchni. Następuje płynne zamknięcie okładki.
