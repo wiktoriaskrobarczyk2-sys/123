@@ -27,3 +27,6 @@ Płynny przebieg od zamkniętej okładki przez strony 02–06 do szybkiego przew
 
 ## Wersja 4
 Szybkie kartki mają autentyczny zadruk z PDF-u, zamiast pustych powierzchni. Przewijanie 18 kartek w około sekundę, w częściowo przymkniętej książce. Treść jest nierozpoznawalna dzięki prędkości i rozmyciu samych powierzchni. Następuje płynne zamknięcie okładki.
+
+## Wersja 5
+Oryginalne fonty Transforma Sans oraz Transforma Mix z paczek użytkownika. Sans dla głównych napisów, Mix dla akcentów „uczniów”, „Graj” i „Już wkrótce”. Zweryfikowano polskie znaki i załadowanie obu rodzin; dopasowano odstępy między literami i kontrast końcowego napisu.

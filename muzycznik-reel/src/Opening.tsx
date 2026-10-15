@@ -7,7 +7,7 @@ export const Opening = () => {
   <BrandShapes/>
   <div style={{position:'absolute',left:80,top:125}}><Logo/></div>
   <div style={{position:'absolute',left:80,right:80,top:330}}>
-   <Rise><Label>Muzycznik Artyziaka</Label><div style={{fontSize:84,fontWeight:800,lineHeight:1.06,letterSpacing:-4}}>Już niedługo<br/>dostępny dla<br/>naszych uczniów.</div></Rise>
+   <Rise><Label>Muzycznik Artyziaka</Label><div style={{fontSize:84,fontWeight:800,lineHeight:1.06,letterSpacing:-2}}>Już niedługo<br/>dostępny dla<br/>naszych <span style={{fontFamily:'"Transforma Mix"'}}>uczniów.</span></div></Rise>
   </div>
   <div style={{position:'absolute',width:840,height:220,left:120,top:1320,background:'#14313430',filter:'blur(38px)',borderRadius:'50%',scale:interpolate(f,[0,2*fps,4.6*fps],[.7,.9,.72],ease)}}/>
   <div style={{position:'absolute',left:120,top:815,perspective:1800,scale:interpolate(f,[0,.8*fps,4.6*fps],[.85,1,1],ease)}}>
