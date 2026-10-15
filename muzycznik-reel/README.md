@@ -28,3 +28,7 @@ npx remotion render src/index.ts MuzycznikReel out/Muzycznik-Artyziaka-v5.mp4 --
 Walidacja: npm run lint, przegląd 16 kadrów szybkiego przewijania i zamknięcia, pełny render 540 klatek oraz kontrola parametrów eksportu ffprobe.
 
 Typografia: sprawdzono polskie znaki w dostarczonych fontach oraz kadry otwarcia, środka i finału z obydwoma załadowanymi krojami. Dekorację w finale odsunięto od napisu, aby utrzymać kontrast.
+
+## Rolka CEN Wydminy
+
+Nowa reklama obozów zimowych ma kompozycję `CenWinterCamps` (25 sekund, 1080 × 1920). Scenariusz, źródła informacji, kolory i polecenie eksportu są w [CEN-WYDMINY.md](CEN-WYDMINY.md). Przy dalszej pracy nie łączyć się ze stroną ośrodka — użytkownik przekazał informacje i kolory bezpośrednio.
