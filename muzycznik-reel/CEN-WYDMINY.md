@@ -44,3 +44,19 @@ npx remotion render src/index.ts CenWinterCamps out/CEN-Wydminy-obozy-zimowe-v1.
 ```
 
 Sprawdzono kadry ośmiu scen, orientację i SDR, liczbę klatek przygotowanych klipów, poprawne dekodowanie wideo oraz napisy. Wynik powinien zawierać 750 klatek i trwać 25 sekund.
+
+## Solarium — już otwarte
+
+Osobna kompozycja `CenSolarium`: 15 s, 1080×1920, 30 fps, bez ścieżki audio,
+z lokalną czcionką Montserrat i kolorami #021C41 / #1C83C9.
+Zdjęcia pochodzą wyłącznie z folderu `CEN WYDMINY SOLARIUM`.
+Nie pobierano informacji ze strony internetowej. Treść: otwarcie solarium,
+prezentacja urządzenia i kosmetyków, zaproszenie do CEN Wydminy.
+Nie dodawano cen, godzin ani twierdzeń o korzyściach zdrowotnych.
+
+```bash
+npx remotion render src/index.ts CenSolarium out/CEN-Wydminy-solarium-otwarte-v1.mp4 --browser-executable=/usr/bin/chromium --codec=h264 --crf=19 --concurrency=3
+```
+
+Plik do pobrania: `../cen-rolka-gotowa/CEN-Wydminy-solarium-otwarte-v1.mp4`.
+Sceny są osobnymi kompozycjami w folderze `CEN-Solarium`.
