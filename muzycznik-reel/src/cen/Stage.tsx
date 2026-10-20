@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import {AbsoluteFill,Img,Easing,interpolate,staticFile,useCurrentFrame,useVideoConfig,delayRender,continueRender,cancelRender} from 'remotion';
 import {cen} from './palette';
 const clamp={extrapolateLeft:'clamp',extrapolateRight:'clamp'} as const;
-const Font=()=>{
+export const Font=()=>{
  const [handle]=useState(()=>delayRender('CEN typography'));
  useEffect(()=>{Promise.all([document.fonts.load('800 100px Cen Montserrat'),document.fonts.load('550 36px Cen Montserrat')]).then(()=>continueRender(handle)).catch(cancelRender);},[handle]);
  return <style>{`@font-face{font-family:'Cen Montserrat';src:url('${staticFile('Montserrat.ttf')}') format('truetype');font-weight:100 900;font-display:block;}`}</style>;
