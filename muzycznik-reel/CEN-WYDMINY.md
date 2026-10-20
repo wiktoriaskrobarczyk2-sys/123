@@ -60,3 +60,13 @@ npx remotion render src/index.ts CenSolarium out/CEN-Wydminy-solarium-otwarte-v1
 
 Plik do pobrania: `../cen-rolka-gotowa/CEN-Wydminy-solarium-otwarte-v1.mp4`.
 Sceny są osobnymi kompozycjami w folderze `CEN-Solarium`.
+
+### Wersja 2 — karnety dwustronne
+
+Kompozycja `CenSolarium` ma teraz 27 s (810 klatek). Dodano dwie niezależne
+sceny po 6 s: `SolariumPass50` i `SolariumPass100`. Każda pokazuje drukowaną
+kartę w perspektywie, obrót z przodu na tył, zatrzymanie na odwrocie i powrót.
+Grafiki obu stron wycięto z dostarczonych plansz bez szarego otoczenia;
+proporcje grafik zachowano, rewers ma białe marginesy na formacie awersu.
+Ceny 115 zł / 230 zł pochodzą z dostarczonych projektów.
+Eksport: `../cen-rolka-gotowa/CEN-Wydminy-solarium-otwarte-v2.mp4`.

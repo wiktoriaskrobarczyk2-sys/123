@@ -1,3 +1,4 @@
+import {SolariumPass50,SolariumPass100} from './SolariumPass';
 import React from 'react';
 import {AbsoluteFill,Img,Composition,Folder,Series,staticFile,interpolate,useCurrentFrame,useVideoConfig,Easing} from 'remotion';
 import {Font} from '../Stage';
@@ -26,7 +27,7 @@ const SolariumFrame:React.FC<{photo:string;label:string;headline:React.ReactNode
   </div>
   <div style={{position:'absolute',left:80,right:80,bottom:145,borderTop:'1px solid #ffffff40',paddingTop:24,display:'flex',justifyContent:'space-between',alignItems:'center'}}>
    <div style={{fontSize:25,fontWeight:550,letterSpacing:2}}>CEN WYDMINY • SOLARIUM</div>
-   <div style={{color:cen.blue,fontSize:21,fontWeight:600}}>{String(number).padStart(2,'0')} / 04</div>
+   <div style={{color:cen.blue,fontSize:21,fontWeight:600}}>{String(number).padStart(2,'0')} / 06</div>
   </div>
   <div style={{position:'absolute',bottom:0,left:0,height:5,background:cen.blue,width:`${interpolate(f,[0,5*fps],[0,100],clamp)}%`}}/>
  </AbsoluteFill>;
@@ -34,17 +35,21 @@ const SolariumFrame:React.FC<{photo:string;label:string;headline:React.ReactNode
 export const SolariumOpening=()=> <SolariumFrame photo="cen/solarium/device.jpg" label="NOWOŚĆ W CEN WYDMINY" headline={<>Solarium<br/>już otwarte!</>} subline="Zajrzyj do naszego wnętrza." number={1}/>;
 export const SolariumDevice=()=> <SolariumFrame photo="cen/solarium/detail.jpg" label="ZOBACZ Z BLISKA" headline={<>Oto nasze<br/>solarium.</>} subline="CEN Wydminy" number={2}/>;
 export const SolariumCosmetics=()=> <SolariumFrame photo="cen/solarium/cosmetics.jpg" label="NA MIEJSCU" headline={<>Kosmetyki<br/>do solarium.</>} subline="Poznaj dostępny wybór." number={3}/>;
-export const SolariumClosing=()=> <SolariumFrame photo="cen/solarium/device.jpg" label="JUŻ MOŻESZ NAS ODWIEDZIĆ" headline={<>Solarium<br/>w CEN Wydminy.</>} subline="Jesteśmy otwarci. Do zobaczenia!" number={4} closing/>;
+export const SolariumClosing=()=> <SolariumFrame photo="cen/solarium/device.jpg" label="JUŻ MOŻESZ NAS ODWIEDZIĆ" headline={<>Solarium<br/>w CEN Wydminy.</>} subline="Jesteśmy otwarci. Do zobaczenia!" number={6} closing/>;
 export const SolariumReel=()=>{const {fps}=useVideoConfig();return <Series>
  <Series.Sequence name="Solarium już otwarte" durationInFrames={4*fps} premountFor={fps}><SolariumOpening/></Series.Sequence>
  <Series.Sequence name="Urządzenie z bliska" durationInFrames={3*fps} premountFor={fps}><SolariumDevice/></Series.Sequence>
  <Series.Sequence name="Kosmetyki na miejscu" durationInFrames={3*fps} premountFor={fps}><SolariumCosmetics/></Series.Sequence>
+ <Series.Sequence name="Karnet 50 minut — przód i tył" durationInFrames={6*fps} premountFor={fps}><SolariumPass50/></Series.Sequence>
+ <Series.Sequence name="Karnet 100 minut — przód i tył" durationInFrames={6*fps} premountFor={fps}><SolariumPass100/></Series.Sequence>
  <Series.Sequence name="Zapraszamy" durationInFrames={5*fps} premountFor={fps}><SolariumClosing/></Series.Sequence>
  </Series>;};
 export const SolariumCompositions=()=> <Folder name="CEN-Solarium">
- <Composition id="CenSolarium" component={SolariumReel} durationInFrames={450} fps={30} width={1080} height={1920}/>
+ <Composition id="CenSolarium" component={SolariumReel} durationInFrames={810} fps={30} width={1080} height={1920}/>
  <Composition id="SolariumOpening" component={SolariumOpening} durationInFrames={120} fps={30} width={1080} height={1920}/>
  <Composition id="SolariumDevice" component={SolariumDevice} durationInFrames={90} fps={30} width={1080} height={1920}/>
  <Composition id="SolariumCosmetics" component={SolariumCosmetics} durationInFrames={90} fps={30} width={1080} height={1920}/>
+ <Composition id="SolariumPass50" component={SolariumPass50} durationInFrames={180} fps={30} width={1080} height={1920}/>
+ <Composition id="SolariumPass100" component={SolariumPass100} durationInFrames={180} fps={30} width={1080} height={1920}/>
  <Composition id="SolariumClosing" component={SolariumClosing} durationInFrames={150} fps={30} width={1080} height={1920}/>
  </Folder>;
